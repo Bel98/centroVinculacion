@@ -19,8 +19,10 @@ namespace centroVinculacion
         public MainPage()
         {
             InitializeComponent();
-            
+           
+
         }
+
 
         private async void btnGet_Clicked(object sender, EventArgs e)
         {
@@ -33,12 +35,14 @@ namespace centroVinculacion
 
         private async void btnPost_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new viewInsertar());
+            await Navigation.PushModalAsync(new viewInsertar());
         }
 
         private async void btnDelete_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new viewDelete());
+            await Navigation.PushModalAsync(new viewDelete());
         }
+
+        
     }
 }

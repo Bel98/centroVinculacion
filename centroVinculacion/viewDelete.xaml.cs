@@ -25,7 +25,7 @@ namespace centroVinculacion
                 int Id = Convert.ToInt32(txtIdPerfil.Text);
                 //delete por id
                 HttpClient client = new HttpClient();
-                var resultado = await client.DeleteAsync(String.Concat("http://192.168.1.108/moviles/post.php", txtIdPerfil.Text));
+                var resultado = await client.DeleteAsync(String.Concat("http://192.168.1.108/moviles/post1.php", txtIdPerfil.Text));
                 if (resultado.IsSuccessStatusCode)
                 {
                     await DisplayAlert("Exito", "Registro eliminado", "Ok");

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="centroVinculacion.View.ViewLogin">
+    <ContentPage.Content>
+        <StackLayout Padding="0" Margin="10,80,10,0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="120" BackgroundColor="Black" Padding="0" Margin="1">
+                <Image Source="https://data.1freewallpapers.com/detail/library-books-reading-comfort-shelves.jpg"  Aspect="AspectFill" Margin="0"/>
+
+            </Frame>
+            <Frame BackgroundColor="Transparent"  Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="txtUsuCorreo" Placeholder="Usuario o Correo" FontSize="13" HorizontalOptions="FillAndExpand" />
+                    <Entry x:Name="txtClave" Placeholder="Contraseña" IsPassword="True" FontSize="13" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </Frame>
+            <Button Text="Ingresar" x:Name="btnIniciarSesion" Clicked="btnIniciarSesion_Clicked" BackgroundColor="DarkTurquoise"  TextColor="White"  CornerRadius="34"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

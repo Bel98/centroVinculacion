@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="centroVinculacion.View.ViewRegisto"
+             NavigationPage.HasNavigationBar="False"
+             Background="#D6D6D6"
+             Title="Perfil Estudiante">
+    <ContentPage.Content>
+        <StackLayout>
+           
+            <Label Text="Perfil" FontSize="Medium"/>
+            <Entry x:Name="txtIdPerfil" Placeholder="Codigo" Keyboard="Numeric"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Apellido"/>
+            <Entry x:Name="txtCedula" Placeholder="Cédula"/>
+            <Entry x:Name="txtTelefono" Placeholder="Telefono"/>
+            <Entry x:Name="txtInstitucion" Placeholder="Institución"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnRegistrar" Text="Registrar" Clicked="btnRegistrar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                
+            </Grid>
+       
+        
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

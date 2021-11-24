@@ -13,20 +13,23 @@
         <ListView x:Name="MyListView">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
+                    <ViewCell Height="20">
                         <StackLayout>
-                            <Label x:Name="lblidPerfil" Text="{Binding idPerfil}">
-                            </Label>
-                            <Label x:Name="lblnombre" Text="{Binding nombre}">                                
-                            </Label>
-                            <Label x:Name="lblapellido" Text="{Binding nombre}">
-                            </Label>
-                            <Label x:Name="lblcedula" Text="{Binding cedula}">                                
-                            </Label>
-                            <Label x:Name="lbltelefono" Text="{Binding telefono}">
-                            </Label>
-                            <Label x:Name="lblinstitucion" Text="{Binding institucion}">
-                            </Label>
+                            <Grid>
+                                <Label  x:Name="lblidPerfil" Text="{Binding idPerfil}">
+                                </Label>
+                                <Label x:Name="lblnombre" Text="{Binding nombre}">
+                                </Label>
+                                <Label x:Name="lblapellido" Text="{Binding apellido}">
+                                </Label>
+                                <Label x:Name="lblcedula" Text="{Binding cedula}">
+                                </Label>
+                                <Label x:Name="lbltelefono" Text="{Binding telefono}">
+                                </Label>
+                                <Label x:Name="lblinstitucion" Text="{Binding institucion}">
+                                </Label>
+
+                            </Grid>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
